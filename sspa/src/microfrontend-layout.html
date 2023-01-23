@@ -1,0 +1,46 @@
+<single-spa-router>
+  <div>
+    <application name="topnav"></application>
+  </div>
+  <div class="main-content" id="content">
+    <application name="navbar" props="navs"></application>
+    <div class="content">
+
+      <route path="app2">
+        <application name="app2"></application>
+      </route>
+      <route path="app3">
+        <application name="mfe-demo-ng"></application>
+      </route>
+      <route path="app4">
+        <application name="@whds-dbmo/mfe-demo" props="myProp"></application>
+      </route>
+    </div>
+  </div>
+</single-spa-router>
+<!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+<!-- Example layouts you might find helpful:
+
+  <nav>
+    <application name="@org/navbar"></application>
+  </nav>
+  <route path="settings">
+    <application name="@org/settings"></application>
+  </route>
+  -->
+<!-- <route path="/app4">
+    <application name="@whds-dbmo/mfe-demo"></application>
+  </route> -->
+
+<!-- <main>
+    <route default> -->
+<!-- <application name="@single-spa/welcome"></application> -->
+<!-- <application name="@whds-dbmo/mfe-demo"></application> -->
+<!-- </route>
+  </main> -->

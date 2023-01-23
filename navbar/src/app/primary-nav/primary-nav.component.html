@@ -1,0 +1,29 @@
+<div id="sidebar" class="sidebar">
+  <nav class="nav flex-column">
+    <li class="nav-item" *ngFor="let nav of myProp">
+      <a routerLink={{nav.url}} class="nav-link">
+        {{nav.title}}
+      </a>
+    </li>
+    <!-- <li class="nav-item">
+      <a routerLink="/app1" class="nav-link">
+        App 1
+      </a>
+    </li> -->
+    <!-- <li class="nav-item">
+      <a routerLink="/app2" class="nav-link">
+        App 2
+      </a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="/app3" class="nav-link">
+        App 3 (Angular 14)
+      </a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="/app4" class="nav-link">
+        App 4 (React)
+      </a>
+    </li> -->
+  </nav>
+</div>
